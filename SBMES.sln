@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBMES.Application", "SBMES.Application\SBMES.Application.csproj", "{9BD96A63-E9BC-4BC4-B887-7914F1257CC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6A31E17C-77BF-46F1-BDC2-DBC024086AB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBMES.Application.Tests", "SBMES.Application.Tests\SBMES.Application.Tests.csproj", "{7A629E6D-F533-4192-B21F-4A0D38178F9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BD96A63-E9BC-4BC4-B887-7914F1257CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD96A63-E9BC-4BC4-B887-7914F1257CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD96A63-E9BC-4BC4-B887-7914F1257CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD96A63-E9BC-4BC4-B887-7914F1257CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A629E6D-F533-4192-B21F-4A0D38178F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A629E6D-F533-4192-B21F-4A0D38178F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A629E6D-F533-4192-B21F-4A0D38178F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A629E6D-F533-4192-B21F-4A0D38178F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A629E6D-F533-4192-B21F-4A0D38178F9E} = {6A31E17C-77BF-46F1-BDC2-DBC024086AB6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA86CC74-062E-4DAB-AF4B-1A79B2BDFE99}
+	EndGlobalSection
+EndGlobal
