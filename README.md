@@ -24,8 +24,8 @@ _How to test it_
 - if vaildation fails then all errors are groupped together and [ValidationException](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Services/MessageCodec.cs#L42) gets thrown
 
 #### Serialization
-- serialization of Message to binary format takes place in  [CustomMessageSerializer](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Services/Serializer/CustomMessageSerializer.cs)
-- first Message object is flattened through using Automapper [MessageMappingProfile](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Models/MessageStruct.cs) to [MessageStruct](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Models/MessageStruct.cs) set. During that process original headers are converted to single string.
+- Message serialization to binary format takes place in  [CustomMessageSerializer](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Services/Serializer/CustomMessageSerializer.cs)
+- first Message object is flattened through Automapper [MessageMappingProfile](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Models/MessageStruct.cs) to [MessageStruct](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Models/MessageStruct.cs) set. During that process original headers are converted to single string.
 - then we merge headers&payload into one byte array. To make deserialization possible at the beginning of new array we but few additional bytes ([details](https://github.com/mariusz-pawlowski/Sinch_SBMES/blob/main/SBMES.Application/Services/Serializer/CustomMessageSerializer.cs#L25))
 
 #### Encryption
