@@ -17,18 +17,8 @@ namespace SBMES.Application.AutoMaper
             CreateMap<string, List<KeyValuePair<string, string>>>()
                 .ConvertUsing(src => DeserializeMessageHeaders(src));
 
-            //CreateMap<byte[], byte[]>()
-            //    .ConvertUsing(src => CopyByteArrays(src));
-
             CreateMap<MessageStruct, Message>().ReverseMap();
-                //.ForMember(src => src.Payload, opt => opt.);
         }
-
-        //private static byte[] CopyByteArrays(byte[] source)
-        //{
-        //    var newArray =  source.ToArray();
-        //    return newArray;
-        //}
 
         private static string SerializeMessageHeader(List<KeyValuePair<string,string>> headers)
         {
